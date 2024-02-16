@@ -8,6 +8,8 @@ public class CountTheNumberOfCharactersInString {
     public static void main(String[] args){
         String str = "aaabbaacdddaaeefg";
         StringBuilder sb = new StringBuilder();
+        List<String> s = Arrays.stream(str.split("")).sorted().toList();
+        System.out.println(s);
         /*
         the output will be charactore and its repetition count
          */
