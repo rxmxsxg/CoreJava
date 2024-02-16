@@ -32,8 +32,5 @@ public class ConvertListToMap {
         );
         Map<Integer,String> res = userList.stream().collect(Collectors.toMap(e->e.id, e->e.name));
         System.out.println(res);
-
-
     }
-
 }
